@@ -2,17 +2,12 @@ package org.example.lesson_1
 
 fun main() {
 
+    val NUMBER_FOR_CONVERSIONS = 60
     var seconds = 6480
-    val minute = (seconds / 60) - 60
-    val hour = seconds / 3600
-    seconds %= 60
+    val minute = (seconds % (NUMBER_FOR_CONVERSIONS * NUMBER_FOR_CONVERSIONS)) / NUMBER_FOR_CONVERSIONS
+    val hour = seconds / (NUMBER_FOR_CONVERSIONS * NUMBER_FOR_CONVERSIONS)
+    seconds %= NUMBER_FOR_CONVERSIONS
 
-    print("0")
-    print(hour)
-    print(":")
-    print(minute)
-    print(":")
-    print("0")
-    print(seconds)
+    println(String.format("%02d:%02d:%02d", hour, minute, seconds))
 
 }
