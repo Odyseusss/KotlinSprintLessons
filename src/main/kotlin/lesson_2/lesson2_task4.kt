@@ -6,7 +6,7 @@ fun main() {
     val ironOre = 11
     val buff = 20
 
-    println((crystalOre * buff) / 100)
-    println((ironOre * buff) / 100)
+    println("Amount of bonus crystal ore = " + (crystalOre * buff) / 100)
+    println("Amount of bonus iron ore = " + (ironOre * buff) / 100)
 
 }
