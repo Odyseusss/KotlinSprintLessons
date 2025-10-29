@@ -2,7 +2,12 @@ package org.example.lesson_2
 
 fun main() {
 
-    val sum: Float = (3 + 4 + 3 + 5) / 4f
+    val pupil1 = 3
+    val pupil2 = 4
+    val pupil3 = 3
+    val pupil4 = 5
+    val quantityOfPupils = 4.0f
+    val sum: Float = (pupil1 + pupil2 + pupil3 + pupil4) / quantityOfPupils
 
     println(sum)
 
