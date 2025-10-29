@@ -6,7 +6,7 @@ fun main() {
     val hour = seconds / (NUMBER_FOR_CONVERSIONS * NUMBER_FOR_CONVERSIONS)
     seconds %= NUMBER_FOR_CONVERSIONS
 
-    println(("%02d:%02d:%02d".format(hour, minute, seconds)))
+    println("%02d:%02d:%02d".format(hour, minute, seconds))
 
 }
 
