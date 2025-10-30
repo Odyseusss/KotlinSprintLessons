@@ -6,9 +6,9 @@ fun main() {
     val pupil2 = 4
     val pupil3 = 3
     val pupil4 = 5
-    val quantityOfPupils = 4.0f
-    val sum: Float = (pupil1 + pupil2 + pupil3 + pupil4) / quantityOfPupils
+    val quantityOfPupils = 4
+    val sum = (pupil1 + pupil2 + pupil3 + pupil4).toDouble() / quantityOfPupils
 
-    println(sum)
+    println("%.2f".format(sum))
 
 }
