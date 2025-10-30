@@ -1,15 +1,17 @@
 package org.example.lesson_2
 
+import kotlin.math.pow
+
 fun main() {
 
     val years = 20
-    var sum = 70_000.0
-    val rate = 0.167
+    val sum = 70_000.0
+    val rate = 16.7
 
-    for (i in 1..years) {
-        sum *= (1 + rate)
-    }
+    val result = sum * (1 + rate / PERCENTS_CONVERSION).pow(years)
 
-    println(String.format("%.3f", sum))
+    println("%.3f".format(result))
 
 }
+
+const val PERCENTS_CONVERSION = 100
